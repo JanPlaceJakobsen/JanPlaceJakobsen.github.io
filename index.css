@@ -1,0 +1,68 @@
+/*
+Color scheme
+base color: #1A1A1D - black ish
+color one: #4E4E50 - grey
+color two: #6F2232 - deep muted red
+color three: #950740 - red and purple mixed
+color four: #C3073F - red
+color text: #E7E6E6 - white ish
+
+*/
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+body {
+    background-color: #1A1A1D;
+}
+
+.mainContainer {
+    padding: 6rem 0;
+    margin-left: 2rem;
+}
+
+.textContainer {
+    max-width: 40rem;
+}
+
+h1 {
+    color: #E7E6E6;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: #E7E6E6;
+    font-family: sans-serif;
+}
+
+.highlight {
+    color: #E7E6E6;
+    transition: 0.5s;  
+}
+
+.highlight:hover {
+    color: #C3073F;
+}
+
+.highlightTwo {
+    color: #E7E6E6;
+    transition: 0.5s;  
+}
+
+.highlightTwo:hover {
+    color: #6F2232;
+}
+.links {
+    margin-right: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #C3073F;
+}
+.links:hover {
+    text-decoration: underline;
+}

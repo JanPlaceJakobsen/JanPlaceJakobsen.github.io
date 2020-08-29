@@ -1,8 +1,44 @@
 <html>
     <head>
-
+        <title>Jan's Portfolio</title>
+        <link rel="stylesheet" href="index.css">
     </head>
-    <body>
-        
+    <body class="preload">
+        <div class="mainContainer">
+            <h1>
+                <span class="highlight">Jan </span>
+                <span class="highlightTwo">Place </span>
+                <span class="highlight">Jakobsen</span>                
+            </h1>
+            <div class="textContainer">
+                <h2>
+                    <span>I am a bachelor in </span>
+                    <span class="highlight">Medialogy.</span>
+                    <br>
+                    <a>
+                        As a <span class="highlight">Medialogist</span> i worked with a lot of different <span class="highlight">technologies</span>
+                         and im not afraid to toss myself into new challenges.
+                    </a>
+                    <br>
+                    <br>
+                    <a>
+                        I like to <span class="highlight">build</span> stuff and <span class="highlight">resolve</span> problems that may arise in the process.
+                    </a>
+                </h2>
+            </div>
+
+            <div class="linkContainer">
+                <span>
+                    <a href="" class="links">Projects</a>
+                    <a href="" class="links">About</a>
+                    <a href="" class="links">Contact</a>
+                </span>
+            </div>
+        </div>
     </body>
+    <script>
+        $(window).load(function() {
+            $("body").removeClass("preload");
+        })
+    </script>
 </html>
