@@ -4,41 +4,92 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body class="preload">
-        <div class="mainContainer">
-            <h1>
-                <span class="highlight">Jan </span>
-                <span class="highlightTwo">Place </span>
-                <span class="highlight">Jakobsen</span>                
-            </h1>
-            <div class="textContainer">
-                <h2>
-                    <span>I am a bachelor in </span>
-                    <span class="highlight">Medialogy.</span>
-                    <br>
-                    <a>
-                        As a <span class="highlight">Medialogist</span> i worked with a lot of different <span class="highlight">technologies</span>
-                         and im not afraid to toss myself into new challenges.
-                    </a>
-                    <br>
-                    <br>
-                    <a>
-                        I like to <span class="highlight">build</span> stuff and <span class="highlight">resolve</span> problems that may arise in the process.
-                    </a>
-                </h2>
-            </div>
-
+        <div id="home" class="mainContainer">
             <div class="linkContainer">
                 <span>
-                    <a href="" class="links">Projects</a>
-                    <a href="" class="links">About</a>
-                    <a href="" class="links">Contact</a>
+                    <a href="#home" class="links">Home</a>
+                    <br>
+                    <a href="#recentProjects" class="links">Projects</a>
+                    <br>
+                    <a href="#about" class="links">About</a>
+                    <br>
+                    <a href="#contact" class="links">Contact</a>
                 </span>
             </div>
+            <div class="verticalCenter">
+                <div  class="nameText">
+                    <h1>
+                        <span>Hi I'm </span>
+                        <span class="highlight">Jan Place Jakobsen</span>               
+                    </h1>
+                </div>
+                
+                <div class="textContainer">
+                    <h2>
+                        <span>I am a bachelor in </span>
+                        <span class="highlight">Medialogy.</span>
+                        <br>
+                        <a>
+                            As a Medialogist i worked with a lot of different technologies
+                            and im not afraid to toss myself into new challenges.
+                        </a>
+                        <br>
+                        <br>
+                        <a>
+                            I like to build stuff and resolve problems that may arise in the process.
+                        </a>
+                    </h2>
+                </div>
+            </div>
+            <div class="nextArrowOne">
+                <span>
+                    <a href="#recentProjects" class="nextArrowText">
+                        Recent projects
+                    </a>
+                </span>                
+            </div>           
+        </div>
+
+        <div id="recentProjects" class="recentProjects">
+            <div class="projectContainer">
+                <h1>                    
+                Recent Projects
+                </h1>
+            </div>  
+        </div>
+
+        <div id="about" class="about">
+            <div class="aboutContainer">
+                <h1>                    
+                About
+                </h1>
+            </div>  
+        </div>
+
+        <div id="contact" class="contact">
+            <div class="contactContainer">
+                <h1>                    
+                Contact
+                </h1>
+            </div> 
+            <div class="contactIcons">
+                Contact icon goes here
+            </div> 
         </div>
     </body>
+        
     <script>
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
         $(window).load(function() {
             $("body").removeClass("preload");
         })
+
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
     </script>
 </html>

@@ -16,17 +16,70 @@ color text: #E7E6E6 - white ish
     -o-transition: none !important;
 }
 
+html {    
+    scroll-behavior: smooth; 
+}
+
 body {
     background-color: #1A1A1D;
 }
 
-.mainContainer {
-    padding: 6rem 0;
+footer {
     margin-left: 2rem;
+}
+
+.mainContainer {
+    margin-left: 2rem;
+    min-height: 100%;
+    background-image: url("");
 }
 
 .textContainer {
     max-width: 40rem;
+}
+
+.linkContainer {
+    position: fixed;
+    padding-top: 4rem;
+    right: 0;
+}
+
+.recentProjects {
+    padding-top: 4rem;
+    min-height: 100%;
+}
+
+.projectContainer{
+    text-align: center;
+}
+
+.about {
+    padding-top: 4rem;
+    min-height: 100%;
+}
+
+.aboutContainer{
+    text-align: center;
+}
+
+.contact {
+    padding-top: 4rem;
+    min-height: 100%;
+}
+
+.contactContainer{
+    min-height: 75%;
+    text-align: center;
+}
+
+.verticalCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  
+}
+
+.nameText {
+   
 }
 
 h1 {
@@ -39,30 +92,50 @@ h2 {
     font-family: sans-serif;
 }
 
-.highlight {
+h3 {
     color: #E7E6E6;
-    transition: 0.5s;  
+    font-family: sans-serif;
 }
 
-.highlight:hover {
+.highlight {
     color: #C3073F;
+    transition: 0.5s;  
 }
 
 .highlightTwo {
-    color: #E7E6E6;
+    color: #6F2232;
     transition: 0.5s;  
 }
 
-.highlightTwo:hover {
-    color: #6F2232;
-}
 .links {
-    margin-right: 1rem;
-    padding: 1rem;
-    font-size: 2rem;
+    margin-right: 4rem;    
+    padding-left: 0rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: #C3073F;
+    font-family: sans-serif;
 }
 .links:hover {
     text-decoration: underline;
+}
+
+.nextArrowOne {
+    bottom: 2rem;
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+.nextArrowText {
+    color: #E7E6E6;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.contactIcons {
+    text-align: center;
+    color: #E7E6E6;
+    font-family: sans-serif;
 }
