@@ -58,6 +58,40 @@ footer {
     text-align: center;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+  }
+
+.projectBox {
+    height: 15rem;
+    width: 30rem;
+    background-color: #1A1A1D;
+    margin-right: 5%;
+    text-decoration: none;
+}
+.projectBoxFirst {
+    height: 15rem;
+    width: 30rem;
+    background-color: #1A1A1D;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+.projectTitle {
+    color: #E7E6E6;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.projectPicture {
+    height: 82%;
+    background-color: #6F2232;
+}
+
 .about {
     padding-top: 4rem;
     min-height: 100%;
@@ -76,6 +110,20 @@ footer {
 .whiteText {
     color: #E7E6E6;    
     font-family: sans-serif;
+}
+
+.textWidth {
+    max-width: 50%;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.profilePicture {
+    object-fit: cover;
+    max-width: 20rem;
+    border-radius: 50%;
+    border: 5px solid #C3073F;
+    margin-left: 1rem;
 }
 
 .aboutContainer{
@@ -136,6 +184,12 @@ h3 {
     text-decoration: underline;
 }
 
+.mailLink {
+    text-decoration: none;
+    color: #C3073F;
+    cursor: pointer;
+}
+
 .nextArrowOne {
     bottom: 2rem;
     position: absolute;
@@ -156,4 +210,11 @@ h3 {
     color: #E7E6E6;
     font-family: sans-serif;
     min-height: 25%;
+}
+
+.iconPicture {
+    object-fit: cover;
+    max-width: 5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
 }

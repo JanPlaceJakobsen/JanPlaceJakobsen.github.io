@@ -17,6 +17,9 @@
                 </span>
             </div>
             <div class="verticalCenter">
+                <div>
+                    <img src="Foto.jpg" class="profilePicture">
+                </div>
                 <div  class="nameText">
                     <h1>
                         <span>Hi I'm </span>
@@ -55,7 +58,53 @@
                 <h1 class="blackText">                    
                 Recent Projects
                 </h1>
-            </div>  
+                <h2 class="blackText">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h2>
+            </div> 
+            
+            <div class="flex-container">
+                <a href="projectPageOne.html" class="projectBoxFirst">
+                    <h1 class="projectTitle">Title</h1>
+                    <div class="projectPicture">
+
+                    </div>
+                </a>
+                <a href="projectPageOne.html" class="projectBox">
+                    <h1 class="projectTitle">Title</h1>
+                    <div class="projectPicture">
+
+                    </div>
+                </a>
+                <a href="projectPageOne.html" class="projectBox">
+                    <h1 class="projectTitle">Title</h1>
+                    <div class="projectPicture">
+
+                    </div>
+                </a>
+            </div>
+            <div class="flex-container">
+                <a href="projectPageOne.html" class="projectBoxFirst">
+                    <h1 class="projectTitle">Title</h1>
+                    <div class="projectPicture">
+
+                    </div>
+                </a>
+                <a href="projectPageOne.html" class="projectBox">
+                    <h1 class="projectTitle">Title</h1>
+                    <div class="projectPicture">
+
+                    </div>
+                </a>
+                <a href="projectPageOne.html" class="projectBox">
+                    <h1 class="projectTitle">Title</h1>
+                    <div class="projectPicture">
+
+                    </div>
+                </a>
+                
+                
+            </div>
         </div>
 
         <div id="about" class="about">
@@ -63,6 +112,17 @@
                 <h1 class="whiteText">                    
                 About
                 </h1>
+                <br>
+                <br>
+                <h2 class="TextWidth" style="margin: auto;">
+                    <a class="whiteText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, massa in ullamcorper aliquet, 
+                        justo sapien sagittis purus, nec mattis lorem massa eu est. In id ornare est. Maecenas elit turpis, 
+                        pulvinar eu faucibus vel, blandit ut nibh. Integer egestas lorem sem, vitae lacinia turpis convallis vel. 
+                        Quisque egestas efficitur erat, vitae dapibus justo aliquet sed. Vestibulum ex eros, dictum eu semper vel, 
+                        elementum eu turpis. Aliquam id sapien lorem. Nam commodo nunc fringilla nunc pellentesque, elementum pharetra nisi dignissim.
+                    </a>
+                </h2>
             </div>  
         </div>
 
@@ -72,26 +132,29 @@
                     <h1 class="blackText">                    
                         Contact
                     </h1>
+                    <br>
+                    <h2 class="blackText">
+                        You can contact me on my mail:
+                        <br>
+                        <br>
+                        <br>
+                        <a href = "mailto: janplacejakobsen@gmail.com" class="mailLink">janplacejakobsen@gmail.com</a>
+                        <br>
+                        <br>
+                        <br>
+                        Otherwise you can find me on LinkedIn,
+                        <br>
+                         by clicking on the icon below.
+                    </h2>
                 </div>                
             </div> 
             <div class="contactIcons">
-                Contact icon goes here
+                <div class="spacer">
+                    <a href="https://www.linkedin.com/in/jan-place-jakobsen/" style="text-decoration: none;">
+                        <img src="linkedin-tile.svg" class="iconPicture">
+                    </a>
+                </div>
             </div> 
         </div>
     </body>
-        
-    <script>
-        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
-        $(window).load(function() {
-            $("body").removeClass("preload");
-        })
-
-        function copyToClipboard(element) {
-            var $temp = $("<input>");
-            $("body").append($temp);
-            $temp.val($(element).text()).select();
-            document.execCommand("copy");
-            $temp.remove();
-        }
-    </script>
 </html>
