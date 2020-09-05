@@ -32,7 +32,10 @@ footer {
 .mainContainer {
     margin-left: 2rem;
     min-height: 100%;
-    background-image: url("");
+    background-image: url("portfolioBackground.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .textContainer {
