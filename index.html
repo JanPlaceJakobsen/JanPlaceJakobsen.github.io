@@ -2,6 +2,10 @@
     <head>
         <title>Jan's Portfolio</title>
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://kit.fontawesome.com/f3ed9cfe99.js" crossorigin="anonymous"></script>
     </head>
     <body class="preload">
         <div id="home" class="mainContainer">
@@ -12,8 +16,6 @@
                     <a href="#recentProjects" class="links">Projects</a>
                     <br>
                     <a href="#about" class="links">About</a>
-                    <br>
-                    <a href="#contact" class="links">Contact</a>
                 </span>
             </div>
             <div class="verticalCenter">
@@ -45,116 +47,94 @@
                 </div>
             </div>
             <div class="nextArrowOne">
-                <span>
-                    <a href="#recentProjects" class="nextArrowText">
-                        Next
-                    </a>
-                </span>                
+                <a href="#recentProjects" class="links">
+                    <i class="fas fa-chevron-down arrowWidth"></i>
+                </a>             
             </div>           
         </div>
 
         <div id="recentProjects" class="recentProjects">
             <div class="projectContainer">
-                <h1 class="blackText">                    
-                Recent Projects
+                <h1 class="blackText subTitles">Projects
                 </h1>
                 <h2 class="blackText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Here you can see my projects.
                 </h2>
             </div> 
-            
-            <div class="flex-container">
-                <a href="projectPageOne.html" class="projectBoxFirst">
-                    <h1 class="projectTitle">Title</h1>
-                    <div class="projectPicture">
-
+            <br>
+            <br>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide" style="color: black;">
+                        Project 1
                     </div>
-                </a>
-                <a href="projectPageOne.html" class="projectBox">
-                    <h1 class="projectTitle">Title</h1>
-                    <div class="projectPicture">
-
+                    <div class="swiper-slide" style="color: black;">
+                        Project 2
                     </div>
-                </a>
-                <a href="projectPageOne.html" class="projectBox">
-                    <h1 class="projectTitle">Title</h1>
-                    <div class="projectPicture">
-
+                    <div class="swiper-slide" style="color: black;">
+                        Project 3
                     </div>
-                </a>
-            </div>
-            <div class="flex-container">
-                <a href="projectPageOne.html" class="projectBoxFirst">
-                    <h1 class="projectTitle">Title</h1>
-                    <div class="projectPicture">
-
+                    <div class="swiper-slide" style="color: black;">
+                        Project 4
                     </div>
-                </a>
-                <a href="projectPageOne.html" class="projectBox">
-                    <h1 class="projectTitle">Title</h1>
-                    <div class="projectPicture">
-
+                    <div class="swiper-slide" style="color: black;">
+                        Project 5
                     </div>
-                </a>
-                <a href="projectPageOne.html" class="projectBox">
-                    <h1 class="projectTitle">Title</h1>
-                    <div class="projectPicture">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-                    </div>
-                </a>
-                
-                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
 
         <div id="about" class="about">
             <div class="aboutContainer">
-                <h1 class="whiteText">                    
+                <h1 class="whiteText subTitles">                    
                 About
                 </h1>
                 <br>
                 <br>
                 <h2 class="TextWidth" style="margin: auto;">
                     <a class="whiteText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, massa in ullamcorper aliquet, 
-                        justo sapien sagittis purus, nec mattis lorem massa eu est. In id ornare est. Maecenas elit turpis, 
-                        pulvinar eu faucibus vel, blandit ut nibh. Integer egestas lorem sem, vitae lacinia turpis convallis vel. 
-                        Quisque egestas efficitur erat, vitae dapibus justo aliquet sed. Vestibulum ex eros, dictum eu semper vel, 
-                        elementum eu turpis. Aliquam id sapien lorem. Nam commodo nunc fringilla nunc pellentesque, elementum pharetra nisi dignissim.
+                        I'm a bachelor in Medialogy and i'm studying the masters degree of the same path. I'm from Copenhagen, Denmark.
+                        I have an interest in IT and technology, with a focus on media technology, but I'm also intrigued by learning about new topics or delving deeper into allready known ones.
+                        <br>
+                        <br>
+                        Some of the skills i have picked up while being curious is, 3D modelling and printing, Teaching technology, Programming, Prototyping and more.
                     </a>
+                    
                 </h2>
-            </div>  
-        </div>
-
-        <div id="contact" class="contact">
-            <div class="contactContainer">
-                <div class="spacer">
-                    <h1 class="blackText">                    
-                        Contact
-                    </h1>
-                    <br>
-                    <h2 class="blackText">
-                        You can contact me on my mail:
-                        <br>
-                        <br>
-                        <br>
-                        <a href = "mailto: janplacejakobsen@gmail.com" class="mailLink">janplacejakobsen@gmail.com</a>
-                        <br>
-                        <br>
-                        <br>
-                        Otherwise you can find me on LinkedIn,
-                        <br>
-                         by clicking on the icon below.
-                    </h2>
-                </div>                
-            </div> 
-            <div class="contactIcons">
-                <div class="spacer">
-                    <a href="https://www.linkedin.com/in/jan-place-jakobsen/" style="text-decoration: none;">
-                        <img src="linkedin-tile.svg" class="iconPicture">
+                <br>
+                <br>
+                <h3 class="aboutContact">
+                    <a>
+                        Connect with me!
                     </a>
-                </div>
+                    <br>
+                    <a href = "mailto: janplacejakobsen@gmail.com" class="mailLink">janplacejakobsen@gmail.com</a>
+                    <br>
+                    <a href="mailto: janplacejakobsen@gmail.com" class="contactIcons">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jan-place-jakobsen/" class="contactIcons">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </h3>
             </div> 
         </div>
     </body>
+    <script>
+        window.onload = function() {
+            scrollTo(0,0);
+        }
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="Swiper.js"></script>
 </html>

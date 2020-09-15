@@ -46,6 +46,7 @@ footer {
     position: fixed;
     padding-top: 4rem;
     right: 0;
+    z-index: 33;
 }
 
 .recentProjects {
@@ -57,13 +58,6 @@ footer {
 .projectContainer{
     text-align: center;
 }
-
-.flex-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5%;
-  }
-
 .projectBox {
     height: 15rem;
     width: 30rem;
@@ -104,18 +98,28 @@ footer {
 
 .blackText {
     color: #1A1A1D;
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .whiteText {
     color: #E7E6E6;    
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.subTitles {
+    font-size: 4rem;
 }
 
 .textWidth {
     max-width: 50%;
     text-align: left;
     margin-left: 2rem;
+}
+
+.aboutContact {
+    max-width: 50%;
+    margin: auto;
+    text-align: left;
 }
 
 .profilePicture {
@@ -148,17 +152,17 @@ footer {
 
 h1 {
     color: #E7E6E6;
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 h2 {
     color: #E7E6E6;
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 h3 {
     color: #E7E6E6;
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .highlight {
@@ -177,7 +181,7 @@ h3 {
     font-size: 1.5rem;
     text-decoration: none;
     color: #C3073F;
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: 700;
 }
 .links:hover {
@@ -191,30 +195,75 @@ h3 {
 }
 
 .nextArrowOne {
-    bottom: 2rem;
+    bottom: 0;
     position: absolute;
     left: 50%; 
-    transform: translate(-50%, -50%);
     margin: auto;
+}
+.nextArrowOne span {
+    position: absolute;
+    left: 50%;
+}
+
+.nextArrowTwo {
+    position: relative;
+    margin: auto;
+}
+.nextArrowTwo span {
+    position: absolute;
+    left: 50%; 
 }
 
 .nextArrowText {
     color: #E7E6E6;
-    font-family: sans-serif;
+    font-family: 'Oxygen', sans-serif;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
 .contactIcons {
-    text-align: center;
+    font-size: 2rem;
     color: #E7E6E6;
-    font-family: sans-serif;
-    min-height: 25%;
+    text-decoration: none;
+}
+.contactIcons:hover {
+    font-size: 2rem;
+    color: #C3073F;
+    text-decoration: none;
 }
 
 .iconPicture {
     object-fit: cover;
-    max-width: 5rem;
+    max-width: 3rem;
     border-radius: 50%;
-    margin-left: 1rem;
+}
+
+.arrowWidth {
+    font-size: 3rem;
+    color: #E7E6E6;
+}
+.arrowWidth:hover {
+    font-size: 3rem;
+    color: #C3073F;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    z-index: 0;
+}
+
+.swiper-slide {
+    background-color: #E7E6E6;
+}
+
+.swiper-button-prev:after {
+    color: #1A1A1D;
+}
+.swiper-button-next:after {
+    color: #1A1A1D;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #C3073F !important;
 }

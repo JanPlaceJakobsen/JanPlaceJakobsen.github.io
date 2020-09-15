@@ -3,7 +3,10 @@ var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
-    autoplay: true,
+    autoplay: {
+      delay: 800,
+    },
+    spaceBetween: 30,
   
     // If we need pagination
     pagination: {
