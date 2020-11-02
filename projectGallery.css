@@ -1,0 +1,68 @@
+/*
+Color scheme
+base color: #1A1A1D - black ish
+color one: #4E4E50 - grey
+color two: #6F2232 - deep muted red
+color three: #950740 - red and purple mixed
+color four: #C3073F - red
+color text: #E7E6E6 - white ish
+
+*/
+
+.galleryContainer {
+    margin-left: 2rem;
+    min-height: 100%;
+    background-color: ##1A1A1D;
+}
+
+.textPosition {
+    position: absolute;
+}
+
+.thumbContainer {
+    margin-top: 1rem;
+}
+
+div.galleryThumbs {
+    margin: 1rem;
+    background-color: #1A1A1D;
+    justify-content: center;
+    float: left;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #E7E6E6;    
+    margin-top: 1rem;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  div.galleryThumbs:hover {
+      color: #C3073F;
+  }
+    
+  div.galleryThumbs img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    min-height: 250px;
+    object-fit: cover;
+  }
+  
+  div.descThumb {
+    padding: 10px;
+    text-align: center;
+  }

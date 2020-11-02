@@ -193,6 +193,24 @@ h3 {
 }
 .links:hover {
     text-decoration: underline;
+    
+}
+
+.projectsLinks {
+    font-size: 1.5rem;
+    color: #C3073F;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+.projectsLinks:hover {
+    text-decoration: underline;
+}
+
+.centering {
+    text-align: center;
+    clear: both;
+    padding-top: 5rem;
 }
 
 .mailLink {
@@ -254,3 +272,48 @@ h3 {
     font-size: 3rem;
     color: #C3073F;
 }
+
+div.gallery {
+    margin: 1rem;
+    margin-left: 2rem;
+    background-color: #1A1A1D;
+    justify-content: center;
+    float: left;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #E7E6E6;    
+    margin-top: 1rem;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  div.gallery:hover {
+      color: #C3073F;
+  }
+    
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    min-height: 250px;
+    object-fit: cover;
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+  }
