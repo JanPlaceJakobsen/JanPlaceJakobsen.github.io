@@ -89,13 +89,33 @@
                             <a href="singingCigarette.html" class="swiperlink">
                                 <img src="Images\BeerRender.png" class="swiperImage">
                                 <p>Rendered Beer</p>
-                            </a>
-                        </div>                        
+                            </a> 
+                        </div>
+                        <div class="swiper-slide" >
+                            <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+                                <span class="popuptext" id="myPopup">A Simple Popup!</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" >
+                            <!-- Trigger/Open The Modal -->
+                            <button id="myBtn">Open Modal</button>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p>Some text in the Modal..</p>
+                                </div>
+                            </div>
+                        </div>                             
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-
                 </div>
+
+                
+
+                
                                                
             </div>           
 
@@ -140,6 +160,15 @@
     <script>
         window.onload = function() {
             scrollTo(0,0);
+        }
+
+        
+        // POPUP
+
+        // When the user clicks on div, open the popup
+        function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
         }
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
