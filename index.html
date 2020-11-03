@@ -3,6 +3,8 @@
         <title>Jan's Portfolio</title>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <script src="https://kit.fontawesome.com/f3ed9cfe99.js" crossorigin="anonymous"></script>
     </head>
     <body class="preload">
@@ -60,29 +62,42 @@
                 </h2>
                 <br>
                 <br>
-                <div class="gallery">
-                    <a target="_blank" href="runesword.html">
-                        <img src="Images\RuneSword.png" alt="3D model">
-                    </a>
-                    <div class="desc">Runesword</div>
-                </div>
-                <div class="gallery">
-                    <a target="_blank" href="bikehelmet.html">
-                        <img src="Images\LEDHelmet.jpg" alt="Interactive bikehelmet">
-                    </a>
-                    <div class="desc">LED-Helmet</div>
-                </div> 
-                <div class="gallery">
-                    <a target="_blank" href="Images\SingingCigarette.jpg">
-                        <img src="Images\SingingCigarette.jpg" alt="Interactive bin">
-                    </a>
-                    <div class="desc">Singing Cigarette</div>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="runesword.html" class="swiperlink">
+                                <img src="Images\RuneSword.png" class="swiperImage" >
+                                <p>Runesword</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="bikehelmet.html" class="swiperlink">
+                                <img src="Images\LEDHelmet.jpg" class="swiperImage" >
+                                <p>Interactive bikehelmet</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" >
+                            <a href="singingCigarette.html" class="swiperlink">
+                                <img src="Images\SingingCigarette.jpg" class="swiperImage">
+                                <p>Singing Cigarette</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" >
+                            <a href="singingCigarette.html" class="swiperlink">
+                                <img src="Images\BeerRender.png" class="swiperImage">
+                                <p>Rendered Beer</p>
+                            </a>
+                        </div>                        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
                 </div>
                                                
-            </div>
-            <div class="centering">
-                <a href="projectGallery.html" class="projectsLinks centering">More projects</a>
-            </div>  
+            </div>           
 
         </div>
 
@@ -127,4 +142,7 @@
             scrollTo(0,0);
         }
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </html>
