@@ -1,0 +1,44 @@
+/*
+Color scheme
+base color: #1A1A1D - black ish
+color one: #4E4E50 - grey
+color two: #6F2232 - deep muted red
+color three: #950740 - red and purple mixed
+color four: #C3073F - red
+color text: #E7E6E6 - white ish
+
+*/
+
+
+.galleryTextWidth {
+    max-width: 50%;
+    text-align: left;
+    margin: auto;
+  }
+  
+  .projectTitle {
+    padding-top: 4rem;
+  }
+  
+  .imageContainer {
+      margin-top: 1rem;
+  }
+  
+  div.projectImage {
+      margin: 1rem;
+      background-color: #1A1A1D;
+      margin-top: 3rem;
+      max-width: 100%;
+      height: auto;
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+      
+    div.projectImage img {
+      width: 100%;
+      height: auto;    
+      object-fit: cover;
+    }
