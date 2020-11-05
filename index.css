@@ -30,13 +30,18 @@ footer {
 }
 
 .mainContainer {
-    margin-left: 2rem;
     min-height: 100%;
     background-image: url("portfolioBackground.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+@media screen and (max-width: 992px) {
+    .mainContainer {
+      background-position: top;
+      background-position-y: 165px;
+    }
+  }
 
 .textContainer {
     max-width: 40rem;
@@ -129,7 +134,7 @@ footer {
 
 .profilePicture {
     object-fit: cover;
-    max-width: 20rem;
+    max-width: 25rem;
     border-radius: 50%;
     border: 5px solid #C3073F;
     margin-left: 1rem;
@@ -153,7 +158,15 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);  
+    margin-left: 2rem;
 }
+
+@media screen and (max-width: 992px) {
+    .verticalCenter {
+        left: 25%;
+    }
+  }
+
 
 h1 {
     color: #E7E6E6;

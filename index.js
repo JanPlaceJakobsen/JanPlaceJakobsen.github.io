@@ -1,10 +1,9 @@
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
-    slidesPerView: 3.5,
-    spaceBetween:30,
-    loopFillGroupWithBlank: true,
-    freeMode: true,
+    slidesPerView: 5.3,
+    spaceBetween: 15,
+    
   
     // If we need pagination
     pagination: {
@@ -15,10 +14,37 @@ var mySwiper = new Swiper('.swiper-container', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
+
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 640px
+      960: {
+        slidesPerView: 4.3,
+        spaceBetween: 8,
+      },
+      720: {
+        slidesPerView: 3.3,
+        spaceBetween: 6,
+      },
+      540: {
+        slidesPerView: 2.3,
+        spaceBetween: 4,
+      },
+      320: {
+        slidesPerView: 1.3,
+        spaceBetween: 2,
+      },
+      1: {
+        slidesPerView: 1,
+        spaceBetween: 1,
+      }
+    }
   })
 
+  
 
-// Get the modal
+
+/* // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -43,3 +69,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+ */
