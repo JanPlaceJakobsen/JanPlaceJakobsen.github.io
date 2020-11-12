@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function(){
+  document.getElementById("myBtn").onclick = function() {
+      console.log("test");
+  };
+});
+
+
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
@@ -44,7 +51,7 @@ var mySwiper = new Swiper('.swiper-container', {
   
 
 
-/* // Get the modal
+// Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -55,7 +62,8 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
+  console.log("hej");
+  /* modal.style.display = "block"; */
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -69,4 +77,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
- */

@@ -42,3 +42,27 @@ div.projectImage {
     height: auto;    
     object-fit: cover;
   }
+
+  .linkContainer {
+    position: fixed;
+    padding-top: 4rem;
+    right: 0;
+    z-index: 33;
+}
+
+@media screen and (max-width: 992px) {
+  div.projectImage {
+    width: 90% !important;
+  }
+  .links {
+    font-size: 2rem !important;
+    font-weight: 700;
+  }
+  .linkContainer {
+    right: -50px;
+    padding-top: 4rem !important;
+  }
+  .galleryTextWidth {
+    max-width: 70%;
+  }
+}

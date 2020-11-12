@@ -47,11 +47,9 @@
                     </h2>
                 </div>
             </div>
-            <div class="nextArrowOne">
-                <a href="#recentProjects" class="links">
-                    <i class="fas fa-chevron-down arrowWidth"></i>
-                </a>             
-            </div>           
+                <a href="#recentProjects" class="nextArrowOne">
+                    <i class="fas fa-chevron-down arrowWidth arrowColorOne"></i>
+                </a>                
         </div>
 
         <div id="recentProjects" class="recentProjects">
@@ -94,8 +92,8 @@
                         </div>
                         <div class="swiper-slide" >
                             <a href="animation.html" class="swiperlink">
-                                <img src="" class="swiperImage">
-                                <p>Rendered Beer</p>
+                                <img src="LifeVSDeath.jpg" class="swiperImage">
+                                <p>Life and Death</p>
                             </a> 
                         </div>
                         <div class="swiper-slide" >
@@ -105,29 +103,20 @@
                         </div>
                         <div class="swiper-slide" >
                             <!-- Trigger/Open The Modal -->
-                            <button id="myBtn">Open Modal</button>
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal">
-                                <!-- Modal content -->
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <p>Some text in the Modal..</p>
-                                </div>
-                            </div>
+                            <a id="myBtn" href="javascript:void(0)">
+                                Some text here
+                            </a>
+                           
                         </div>                             
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
-
-                
-
-                
-                                               
-            </div>           
-
+                    <a href="#about" class="nextArrowTwo">
+                        <i class="fas fa-chevron-down arrowWidth arrowColorTwo"></i>
+                    </a>                          
+            </div>
         </div>
-
         <div id="about" class="about">
             <div class="aboutContainer">
                 <h1 class="whiteText subTitles">                    
@@ -163,6 +152,16 @@
                 </h3>
             </div> 
         </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+
     </body>
     <script>
         window.onload = function() {
