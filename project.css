@@ -8,12 +8,18 @@ color four: #C3073F - red
 color text: #E7E6E6 - white ish
 
 */
-
+.galleryContainer {
+  min-height: 100%;
+  background-image: url("portfolioBackground3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .galleryTextWidth {
   max-width: 50%;
   text-align: left;
-  margin: auto;
+  margin: auto;  
 }
 
 .projectTitle {
@@ -50,7 +56,12 @@ div.projectImage {
     z-index: 33;
 }
 
+
 @media screen and (max-width: 992px) {
+  .galleryContainer {
+    background-position-y: 87px;
+    background-position-x: -126px;
+  }
   div.projectImage {
     width: 90% !important;
   }

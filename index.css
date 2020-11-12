@@ -31,15 +31,15 @@ footer {
 
 .mainContainer {
     min-height: 100%;
-    background-image: url("portfolioBackground.png");
+    background-image: url("portfolioBackground3.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 @media screen and (max-width: 992px) {
     .mainContainer {
-      background-position: top;
-      background-position-y: 165px;
+      background-position-y: 87px;
+      background-position-x: -126px;
     }
   }
 
